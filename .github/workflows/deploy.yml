@@ -23,11 +23,6 @@ jobs:
       - name: Build the project
         run: npm run build
 
-      - name: Upload dist as artifact (optional, if you want to keep the build result)
-        uses: actions/upload-artifact@v4
-        with:
-          name: dist
-          path: dist/
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3.0.1
