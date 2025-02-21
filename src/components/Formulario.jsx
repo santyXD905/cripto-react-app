@@ -32,7 +32,7 @@ const Formulario = ({setMonedas}) => {
   const [ error , setError] = useState(false)
 
   const [ moneda, SelectMonedas ] = useSelectMonedas("Elige tu Moneda",monedas) 
-  const [ criptomoneda, SelectCriptomonedas ] = useSelectMonedas("Elige tu Criptomoneda",criptos)
+  const [ criptomoneda, SelectCriptomonedas ] = useSelectMonedas("Elige tu Cripto-moneda",criptos)
 
   useEffect( () => {
     const consultarApi = async () => {
