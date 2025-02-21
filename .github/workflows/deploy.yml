@@ -22,6 +22,10 @@ jobs:
 
       - name: Build the project
         run: npm run build
+      
+      - name: Configure Git credentials
+        run: git config --global user.email "santiago24080218@gmail.com"
+        run: git config --global user.name "santyXD905"
 
       - name: Deploy to GitHub Pages
         run: npm run deploy
